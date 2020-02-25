@@ -1,0 +1,100 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cases}
+\twocolumn
+\title{Matematik aflvering}
+\author{Christian Kaae Larsen}
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section*{Opgave 2}
+Løs følgende to ligninger med to ubekendte ved indsættelsesmetoden eller lige store koefficienters metode:
+
+\begin{numcases}{}
+   \frac{8}{x}-\frac{6}{y}-12=0 \label{eq:ligning1} \\
+   \frac{6}{x}-\frac{8}{y}-2=0 \label{eq:ligning2}
+\end{numcases}
+
+Vi benytter indsættelsesmetoden. \\
+ 
+ Isolerer $x$ i ligning \eqref{eq:ligning1}:
+
+\[
+\frac{8}{x}=\frac{6}{y}+12
+\]
+
+\[
+8=x\cdot \left( \frac{6}{y}+12\right)
+\]
+
+\[
+8=\frac{6x}{y}+12x
+\]
+
+\[
+8y=y\cdot \left( \frac{6x}{y}+12x \right)
+\]
+
+\[
+8y=\frac{6xy}{y}+12xy
+\]
+
+\[
+8y=6x+12xy
+\]
+
+Faktoriserer \(6x+12xy\) til \(6x\cdot (1+2y)\)
+
+\[
+8y=6x\cdot(1+2y)
+\]
+
+\[
+\frac{8y}{6\cdot(1+2y)}=\frac{6x\cdot(1+2y)}{6\cdot(1+2y)}
+\]
+
+\[
+x=\frac{8y}{6\cdot(1+2y)}
+\]
+
+\[
+x=\frac{8y\cdot\frac{1}{2}}{6\cdot (1+2y) \cdot \frac{1}{2}}
+\]
+
+
+\[
+x=\frac{4y}{3\cdot(1+2y)}
+\]
+
+Indsætter $x=\frac{4y}{3\cdot(1+2y)}$ i ligning \eqref{eq:ligning2}.
+
+\[
+\frac{\dfrac{6}{4y}}{3\cdot(1+2y)} - \frac{8}{y}-2=0
+\]
+
+Vi ved:
+
+\[
+\dfrac{\dfrac{a}{b}}{c}=\dfrac{ac}{b}
+\]
+
+\[
+\frac{6\cdot3\cdot(1+2y)}{4y}-\frac{8}{y}=2
+\]
+
+\[
+\frac{18+36y}{4y}-\frac{8\cdot4}{y\cdot4}=2
+\]
+
+\[
+\frac{18+36y-32}{4y}
+\]
+
+\end{document}
